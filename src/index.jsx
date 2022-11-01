@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Routes,Route} from "react-router-dom"
+import Accueil from './pages/Accueil';
+import About from './pages/About';
+import settings from "./styles/settings.css"
+import Error from "./pages/Error"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Accueil/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='*' element={<Error/>}/>
+      <Route path='/annonces/:annonceNumber' element/>
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
