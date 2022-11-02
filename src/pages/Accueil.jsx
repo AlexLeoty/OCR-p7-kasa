@@ -2,16 +2,18 @@ import Banner from "../components/Banner";
 import CardsList from "../components/CardsList";
 import Logo from "../components/Logo";
 import Navigation from "../components/Navigation"
+import Footer from "../components/Footer"
 
 function Accueil() {
   return (
     <>
-      <div className="header">
+      <header className="header">
       <Logo/>
       <Navigation />
-      </div>
+      </header>
       <Banner/>
       <CardsList/>
+      <Footer/>
     </>
   );
 }

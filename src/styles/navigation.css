@@ -1,4 +1,19 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-link {
+    display: flex;
+}
+
+.header-link-nav {
+    margin-left: 40px;
+    color: #FF6060;
+    list-style-type: none;
+    text-decoration-line: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
 }

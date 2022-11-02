@@ -1,12 +1,19 @@
+import DropDown from "../components/Dropdown"
+import Footer from "../components/Footer"
+import Logo from "../components/Logo"
 import Navigation from "../components/Navigation"
 
 
 function About() {
 return (
-<div>
-    <Navigation/>
-        A propos du site...
-    </div>
+<> 
+<div className="header">
+      <Logo/>
+      <Navigation />
+      </div>
+        <DropDown/>
+        <Footer/>
+    </>
 )
     
 }

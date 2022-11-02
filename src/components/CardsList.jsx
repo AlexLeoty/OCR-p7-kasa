@@ -1,6 +1,5 @@
 import Card from "./Card"
 
-
 function CardsList() {
     return (
         <div className="background">
@@ -12,10 +11,8 @@ function CardsList() {
            <Card/>
            <Card/>
            <Card/>
-           <Card/>
         </div>
     )
-  
 }
 
 export default CardsList
