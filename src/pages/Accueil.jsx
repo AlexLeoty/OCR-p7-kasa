@@ -3,6 +3,7 @@ import CardsList from "../components/CardsList";
 import Logo from "../components/Logo";
 import Navigation from "../components/Navigation"
 import Footer from "../components/Footer"
+import  "../styles/settings.css"
 
 function Accueil() {
   return (
@@ -11,7 +12,11 @@ function Accueil() {
       <Logo/>
       <Navigation />
       </header>
-      <Banner/>
+      <Banner>
+      <div className="banner-container-background">
+            </div>
+            <h1 className="banner-container-title">Chez vous, partout et ailleurs</h1>
+        </Banner>
       <CardsList/>
       <Footer/>
     </>

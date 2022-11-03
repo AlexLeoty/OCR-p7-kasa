@@ -2,8 +2,17 @@
     border-radius: 10px;
     color: #fff;
     background-color: #FF6060;
-    width: 120px;
+    width: 18%;
     height: 120px;
     padding: 50px;
     margin: 20px;
+}
+
+
+@media  screen and (max-width: 768px) {
+    .card-container {
+        height: 100px;
+        width: -webkit-fill-available;
+        margin: 10px 0;
+    }
 }

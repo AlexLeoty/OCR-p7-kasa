@@ -6,8 +6,8 @@ function Navigation() {
     return (
         <div>
             <ul className='header-link'>
-                <NavLink className='header-link-nav' to="/"><li>Accueil</li></NavLink>
-                <NavLink className='header-link-nav' to="/about"><li >A propos</li></NavLink>
+                <NavLink  to="/"className={(nav)=> (nav.isActive ? 'header-link-nav-active': "header-link-nav")} end ><li>Accueil</li></NavLink>
+                <NavLink to="/about" className={(nav)=> (nav.isActive ? 'header-link-nav-active': "header-link-nav")} ><li >A Propos</li></NavLink>
             </ul>
         </div>
     );

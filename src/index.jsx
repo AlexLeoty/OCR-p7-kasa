@@ -4,8 +4,9 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes,Route} from "react-router-dom"
 import Accueil from './pages/Accueil';
 import About from './pages/About';
-import settings from "./styles/settings.css"
+import  "./styles/settings.css"
 import Error from "./pages/Error"
+import Annonce from './pages/Annonce';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +16,7 @@ root.render(
       <Route path='/' element={<Accueil/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='*' element={<Error/>}/>
-      <Route path='/annonces/:annonceNumber' element/>
+      <Route path='/annonces/' element={<Annonce/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

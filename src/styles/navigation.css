@@ -17,3 +17,35 @@
     font-weight: 500;
     font-size: 24px;
 }
+
+.header-link-nav-active {
+    margin-left: 40px;
+    color: #FF6060;
+    list-style-type: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration-line: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        align-items: center;
+    }
+    .header img  {
+        width: 40%;
+    }
+    .header-link {
+        padding-inline-start: 0px;
+    }
+    .header-link-nav {
+       font-size: 1.2em;
+       margin-left: 10px;
+    }
+
+    .header-link-nav-active {
+       font-size: 1.2em;
+       margin-left: 10px;
+    }
+}

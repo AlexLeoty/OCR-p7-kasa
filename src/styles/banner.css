@@ -1,6 +1,6 @@
 .banner-container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 
@@ -8,6 +8,16 @@
     height: 200px;
     width: 100%;
     background-image:url(../assets/banner.png)  ;
+    border-radius: 25px;
+    filter : brightness(60%);
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+}
+.banner-container-backgroundAbout {
+    height: 200px;
+    width: 100%;
+    background-image:url(../assets/backgroundAbout.png)  ;
     border-radius: 25px;
     filter : brightness(60%);
     position: relative;
@@ -25,4 +35,24 @@
     font-weight: 500;
     font-size: 48px;
     
+}
+
+@media  screen and (max-width: 768px) {
+    .banner-container-title {
+        font-size: 1.8em;
+        left: 12%;
+        top: 15%;
+    }
+    .banner-container-background {
+        height: 150px;
+        background-position: center;
+    }
+    .banner-container-backgroundAbout {
+        height: 230px;
+        background-position: center;
+    }
+    .banner-container {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }

@@ -1,11 +1,8 @@
 
-function Banner() {
+
+function Banner({ children }) {
     return(
-        <div className="banner-container">
-            <div className="banner-container-background">
-            </div>
-            <h1 className="banner-container-title">Chez vous, partout et ailleurs</h1>
-        </div>
+        <div className="banner-container">{children}</div>
          )
 }
 
