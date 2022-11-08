@@ -6,6 +6,8 @@ import  "../styles/settings.css"
 import Card from "../components/Card";
 import annonces from "../Data/annonces.json"
 import { Link } from "react-router-dom";
+import imageLogo from "../assets/LOGO.svg"
+import logoFooter from "../assets/LOGO(1).svg"
 
 
 
@@ -13,7 +15,7 @@ function Accueil() {
   return (
     <>
       <header className="header">
-      <Logo/>
+      <Logo image={imageLogo}/>
       <Navigation />
       </header>
       <Banner>
@@ -31,7 +33,7 @@ function Accueil() {
         })}
         
       </section>
-      <Footer/>
+      <Footer logo={logoFooter}/>
     </>
   );
 }

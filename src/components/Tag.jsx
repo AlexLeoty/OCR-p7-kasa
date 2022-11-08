@@ -1,7 +1,7 @@
 
-function Tag() {
+function Tag({name}) {
     return(
-        <p className="tag-name">Tag</p>
+        <p className="tag-name">{name}</p>
     )
 }
 

@@ -1,7 +1,7 @@
 
-function Logo() {
+function Logo({image}) {
     return (
-        <img src="./images/LOGO.svg" alt="logo Kasa" />
+        <img src={image} alt="logo Kasa" />
     )
 }
 

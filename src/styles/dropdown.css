@@ -1,8 +1,8 @@
 .dropdown-container {
-    margin-bottom: 20px;
     width: 80%;
     margin: auto;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 .dropdown-title {
     color: #FFF;
@@ -29,4 +29,14 @@
         width: auto;
         margin-bottom: 20px;
     }
+}
+
+/*DropDownEquipments & About*/
+
+.dropdown-text li {
+    list-style-type: none;
+}
+
+.dropdown-text-height {
+    min-height: 110px;
 }
