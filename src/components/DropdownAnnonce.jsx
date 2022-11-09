@@ -6,20 +6,20 @@ function DropDownAnnonce({description, buttonClosed, buttonOpen}) {
 
 
     return isOpen ? (
-        <div className="dropdown-container">
+        <article className="dropdown-container-annonce">
       <div className="dropdown-logo"> 
             <h3 className="dropdown-title">Description</h3>
             <img onClick={()=>setIsOpen(false)} src={buttonOpen} alt="logo ouverture" />
         </div>    
             <p className="dropdown-text dropdown-text-height">{description}</p>
-        </div>
+        </article>
     ) :(
-        <div className="dropdown-container">
+        <article className="dropdown-container-annonce">
         <div className="dropdown-logo"> 
               <h3 className="dropdown-title">Description</h3>
               <img onClick={()=>setIsOpen(true)} src={buttonClosed} alt="logo ouverture" />
           </div>
-          </div>
+          </article>
     )
 }
 

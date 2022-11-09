@@ -1,5 +1,5 @@
 body {
-  margin: 30px;
+  margin:10px 20px  0 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Montserrat',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -11,4 +11,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1, h2, h3, p {
+   font-weight: 500;
 }

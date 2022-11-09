@@ -25,36 +25,41 @@ const { title, location, host, cover, description, equipments, rating} = annonce
       <Logo image={imageLogo}/>
       <Navigation />
       </header>
+
       <main>
-      <img src={cover} style={{width: "-webkit-fill-available", margin:"auto", height:"400px" , borderRadius:"20px"}} alt="" />
-      <div style={{display:"flex", justifyContent:"space-between"}}>
-      <header>  
-      <h1>{title}</h1>
-      <h2>{location}</h2>
-      </header>
-      <aside style={{display:"flex", alignItems:"center"}}>
-      <h3>{host.name}</h3>
-      <img  style={{borderRadius:"50%"}} src={host.picture} alt="" />
-      </aside>
-      </div>
-      <article style={{display: "flex", justifyContent:"space-between"}}>
-      <section>
-        {annonce.tags.map((tag) => (
-          <Tag name={tag}/>
-        ))}
-      </section>
-      <section>
-        
-        <Rating rating={rating}/>
-        
-        </section>
-   
-      </article>
+      <img src={cover} className="annonce-pictures" alt="" />
       
-      <div style={{display:"flex"}}>
+      <div className="annonce-container" >
+      <section className="annonce-container-section1">
+        <header>  
+        <h1>{title}</h1>
+        <h3 >{location}</h3>
+        </header>
+
+        <article>
+          {annonce.tags.map((tag) => (
+            <Tag name={tag}/>
+          ))}
+        </article>
+      </section>
+      
+      
+
+      <section className="annonce-container-section2">
+        <article>
+        <Rating rating={rating}/>
+        </article>
+        <div className="annonce-container-section2-profil">
+        <h3>{host.name}</h3>
+        <img className="annonce-host-pic"  src={host.picture} alt="" />
+        </div>
+      </section>
+      </div>
+     
+      <section className="dropdown-annonce">
           <DropDownAnnonce buttonClosed={buttonClosed} buttonOpen={buttonOpen} description={description}/>
           <DropDownEquipments buttonClosed={buttonClosed} buttonOpen={buttonOpen} equipments={equipments}/>
-      </div>
+      </section>
            
       </main>
       <Footer logo={logoFooter}/>

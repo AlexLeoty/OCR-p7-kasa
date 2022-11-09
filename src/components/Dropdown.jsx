@@ -8,7 +8,7 @@ function DropDown({title, description, buttonClosed, buttonOpen}) {
     return isOpen ? (
         <div className="dropdown-container">
       <div className="dropdown-logo"> 
-            <h2 className="dropdown-title">{title}</h2>
+            <h3 className="dropdown-title">{title}</h3>
             <img onClick={()=>setIsOpen(false)} src={buttonOpen} alt="logo ouverture" />
         </div>    
             <p className="dropdown-text">{description}</p>
@@ -16,7 +16,7 @@ function DropDown({title, description, buttonClosed, buttonOpen}) {
     ) :(
         <div className="dropdown-container">
         <div className="dropdown-logo"> 
-              <h2 className="dropdown-title">{title}</h2>
+              <h3 className="dropdown-title">{title}</h3>
               <img onClick={()=>setIsOpen(true)} src={buttonClosed} alt="logo ouverture" />
           </div>
           </div>

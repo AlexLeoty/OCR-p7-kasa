@@ -7,7 +7,7 @@ function DropDownEquipments({equipments, buttonClosed, buttonOpen}) {
 
 
     return isOpen ? (
-        <div className="dropdown-container">
+        <article className="dropdown-container-annonce">
       <div className="dropdown-logo"> 
             <h3 className="dropdown-title">Equipements</h3>
             <img onClick={()=>setIsOpen(false)} src={buttonOpen} alt="logo ouverture" />
@@ -17,14 +17,14 @@ function DropDownEquipments({equipments, buttonClosed, buttonOpen}) {
                     <li>{equipment}</li>
                 ))}
                 </ul>
-        </div>
+        </article>
     ) :(
-        <div className="dropdown-container">
+        <article className="dropdown-container-annonce">
         <div className="dropdown-logo"> 
               <h3 className="dropdown-title">Equipements</h3>
               <img onClick={()=>setIsOpen(true)} src={buttonClosed} alt="logo ouverture" />
           </div>
-          </div>
+          </article>
     )
 }
 
