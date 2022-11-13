@@ -15,8 +15,8 @@ root.render(
     <Routes>
       <Route path='/' element={<Accueil/>}/>
       <Route path='/about' element={<About/>}/>
-      <Route path='*' element={<Error/>}/>
       <Route path='/annonces/:annonceId' element={<Annonce/>}/>
+      <Route path='*' element={<Error/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

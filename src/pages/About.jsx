@@ -14,7 +14,8 @@ import logoFooter from "../assets/LOGO(1).svg"
 
 function About() {
 return (
-<> 
+<> <div className="page-container">
+<div className="content-wrap">
     <header className="header">
       <Logo image={imageLogo}/>
       <Navigation />
@@ -23,12 +24,13 @@ return (
         <div className="banner-container-backgroundAbout "></div>
           </Banner>
 
-          {about.map((data) => (
-                   <DropDown buttonClosed={buttonClosed} buttonOpen={buttonOpen} title={data.title} description={data.description} />
+          {about.map((data, index) => (
+                   <DropDown key={index} buttonClosed={buttonClosed} buttonOpen={buttonOpen} title={data.title} description={data.description} />
           ))}
    
-      
+      </div>
         <Footer logo={logoFooter}/>
+        </div>
     </>
 )
     

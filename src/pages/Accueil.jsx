@@ -14,12 +14,14 @@ import logoFooter from "../assets/LOGO(1).svg"
 function Accueil() {
   return (
     <>
+    <div>
       <header className="header">
       <Logo image={imageLogo}/>
       <Navigation />
       </header>
       <Banner>
       <div className="banner-container-background">
+      
             </div>
             <h1 className="banner-container-title">Chez vous, partout et ailleurs</h1>
         </Banner>
@@ -33,7 +35,9 @@ function Accueil() {
         })}
         
       </section>
+      </div>
       <Footer logo={logoFooter}/>
+      
     </>
   );
 }

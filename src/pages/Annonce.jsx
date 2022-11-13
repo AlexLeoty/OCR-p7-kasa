@@ -12,23 +12,26 @@ import imageLogo from "../assets/LOGO.svg"
 import buttonClosed from "../assets/logoClosed.svg"
 import buttonOpen from "../assets/logoOpen.svg"
 import logoFooter from "../assets/LOGO(1).svg"
+import SlideShow from "../components/SlideShow"
 
 
 
 function Annonce() {
 const { annonceId } = useParams();
 const annonce = annonces.find((annonce) => annonce.id === annonceId);
-const { title, location, host, cover, description, equipments, rating} = annonce;
+const { title, location, host, description, equipments, rating, pictures} = annonce;
     return(
         <>
+        <div className="page-container">
+        <div className="content-wrap" >
       <header className="header">
       <Logo image={imageLogo}/>
       <Navigation />
       </header>
 
       <main>
-      <img src={cover} className="annonce-pictures" alt="" />
-      
+    
+        <SlideShow pictures={pictures}/>
       <div className="annonce-container" >
       <section className="annonce-container-section1">
         <header>  
@@ -37,8 +40,8 @@ const { title, location, host, cover, description, equipments, rating} = annonce
         </header>
 
         <article>
-          {annonce.tags.map((tag) => (
-            <Tag name={tag}/>
+          {annonce.tags.map((tag,index) => (
+            <Tag key={index} name={tag}/>
           ))}
         </article>
       </section>
@@ -62,8 +65,9 @@ const { title, location, host, cover, description, equipments, rating} = annonce
       </section>
            
       </main>
+      </div>
       <Footer logo={logoFooter}/>
-      
+      </div>
       </>
     )
 }

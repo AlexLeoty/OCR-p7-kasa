@@ -13,8 +13,8 @@ function DropDownEquipments({equipments, buttonClosed, buttonOpen}) {
             <img onClick={()=>setIsOpen(false)} src={buttonOpen} alt="logo ouverture" />
         </div>    
             <ul className="dropdown-text dropdown-text-height">
-                {equipments.map((equipment) => (
-                    <li>{equipment}</li>
+                {equipments.map((equipment, index) => (
+                    <li key={index}>{equipment}</li>
                 ))}
                 </ul>
         </article>

@@ -1,9 +1,38 @@
 .slide-container {
-    width: 650px;
-    margin: auto;
-    padding-top: 200px;
+    width: auto;
+height: 40vh;
 }
 
 .slide-container img {
-    height: 500px;
+    height: 11vh;
+}
+
+.backgroundPic {
+    width:auto;
+     height:inherit;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     position: relative;
+     border-radius: 25px;
+     margin-top: 30px;
+}
+
+.twoArrows {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 25vh;
+}
+
+@media screen and (max-width:768px) {
+    .backgroundPic {
+        height: 250px;
+    }
+    .slide-container {
+        height: 29vh;
+    }
+    .twoArrows {
+        bottom: 170px;
+    }
 }

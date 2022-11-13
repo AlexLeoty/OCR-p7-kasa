@@ -6,7 +6,10 @@ import imageLogo from "../assets/LOGO.svg"
 import logoFooter from "../assets/LOGO(1).svg"
 
 function Error() {
-    return(<>
+    return(
+    <>
+    <div className="page-container">
+    <div className="content-wrap">
         <div className="header">
       <Logo image={imageLogo}/>
       <Navigation />
@@ -15,8 +18,11 @@ function Error() {
             <img src="./images/404.svg" alt="Erreur page inexistante"/>
             <p>Oups! La page que vous demandez n'existe pas.</p>
         </div>
-        <NavLink className="error-container-navlink" to="/">Retourner sur la page d'accueil</NavLink>
+        
+    <NavLink className="error-container-navlink" to="/">Retourner sur la page d'accueil</NavLink>
+    </div>
         <Footer logo={logoFooter}/>
+        </div>
         </>
         
     )

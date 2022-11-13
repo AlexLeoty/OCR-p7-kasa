@@ -6,11 +6,11 @@ function Rating({rating}) {
 
     return(
         <>
-        {numbers.map((data) =>
+        {numbers.map((data, index) =>
         rating >= data ? (
-            <img src={star} alt="" />
+            <img key={index} src={star} alt="" />
         ) : (
-            <img src={greystar} alt=""/>
+            <img key={index} src={greystar} alt=""/>
         ))}
         </>
     )
