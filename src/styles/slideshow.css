@@ -1,15 +1,15 @@
 .slide-container {
     width: auto;
-height: 40vh;
+    height: 35vh;
 }
 
 .slide-container img {
-    height: 11vh;
+    height: 10vh;
 }
 
 .backgroundPic {
     width:auto;
-     height:inherit;
+     height:35vh;
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
@@ -22,17 +22,15 @@ height: 40vh;
     display: flex;
     justify-content: space-between;
     position: relative;
-    bottom: 25vh;
+    bottom: 23vh;
+    margin: 10px;
 }
 
 @media screen and (max-width:768px) {
     .backgroundPic {
-        height: 250px;
-    }
-    .slide-container {
-        height: 29vh;
+        height: 35vh;
     }
     .twoArrows {
-        bottom: 170px;
+        bottom: 21vh;
     }
 }
