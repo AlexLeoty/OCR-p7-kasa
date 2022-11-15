@@ -1,7 +1,7 @@
 {
   "name": "kasa",
   "version": "0.1.0",
-  "homepage": "https://gitname.guthub.io/react-gh-pages",
+  "homepage": "https://github.com/AlexLeoty/OCR-p7-kasa",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
