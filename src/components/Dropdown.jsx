@@ -2,7 +2,7 @@ import { useState } from "react"
 
 function DropDown({title, description, buttonClosed, buttonOpen}) {
 
-    const [isOpen, setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(false)
 
 
     return isOpen ? (
