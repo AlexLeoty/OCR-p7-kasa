@@ -1,6 +1,6 @@
 .slide-container {
     width: auto;
-    height: 35vh;
+    height: 40vh;
 }
 
 .slide-container img {
@@ -9,7 +9,7 @@
 
 .backgroundPic {
     width:auto;
-     height:35vh;
+     height:40vh;
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
@@ -22,8 +22,8 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    bottom: 23vh;
-    margin: 10px;
+    bottom: 25vh;
+    margin: 5px;
 }
 
 @media screen and (max-width:768px) {
@@ -32,5 +32,8 @@
     }
     .twoArrows {
         bottom: 21vh;
+    }
+    .slide-container {
+        height: 35vh;
     }
 }
