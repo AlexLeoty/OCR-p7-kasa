@@ -15,10 +15,6 @@ import logoFooter from "../assets/LOGO(1).svg"
 import SlideShow from "../components/SlideShow"
 
 
-
-
-
-
 function Annonce() {
 const { annonceId } = useParams();
 const annonce = annonces.find((annonce) => annonce.id === annonceId);

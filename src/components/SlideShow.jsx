@@ -28,11 +28,11 @@ import RightArrow from "../assets/rightarrow.svg"
       ) : (
         <div className="slide-container">
           <div className="backgroundPic"  style={{backgroundImage: `url(${pictures[currentPic]})`}}></div>
-             <div className="twoArrows">
-              <img src={LeftArrow}  alt="" onClick={Previous} />
-              <img src={RightArrow} alt="" onClick={Next} /> 
+              <div className="twoArrows">
+                <img src={LeftArrow}  alt="" onClick={Previous} />
+                <img src={RightArrow} alt="" onClick={Next} /> 
               </div>
-              <p style={{position:"relative", bottom:"16vh",fontWeight:"bold", textAlign:"center",color:"white"}}>{currentPic+1}/{pictures.length}</p>   
+              <p>{currentPic+1}/{pictures.length}</p>   
         </div>
       )
   }
